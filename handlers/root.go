@@ -15,7 +15,7 @@ func HandleIndex(w http.ResponseWriter, r *http.Request) {
 					</head>
 					<body>
 						<div id="dynamic_value">` + now.String() + `</div>
-						<button hx-get="/dynamic" hx-trigger="click" hx-swap="outerHTML swap" hx-target="#dynamic_value">Get dynamic value</button>
+						<button hx-get="/dynamic" hx-trigger="click" hx-swap="outerHTML" hx-target="#dynamic_value">Get dynamic value</button>
 						<script src="https://unpkg.com/htmx.org@latest" defer></script>
 					</body>
 				</html>`
